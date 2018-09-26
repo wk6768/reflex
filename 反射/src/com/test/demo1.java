@@ -19,7 +19,7 @@ public class demo1 {
 		 * 当获取指定名称的类所体现的对象时,而该对象初始化不使用空参构造函数该怎么办? 
 		 * 既然是用过指定的构造函数进行对象的初始化,所以应该先获取该构造函数.
 		 * 通过字节码文件对象即可完成
-		 * 该方法是getConstructors()可以拿到所有公有的构造函数,getDeclaredConstructors()获取所有构造方法
+		 * 该方法是getConstructors()可以拿到所有公有的构造函数,getDeclaredConstructors()获取所有构造方法，包括私有的
 		 */
 		String name = "com.bean.Person";
 		Class clazz = Class.forName(name);

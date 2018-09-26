@@ -12,8 +12,8 @@ public class demo2 {
 	public static void getFieldDemo() throws Exception {
 		String name = "com.bean.Person";
 		Class clazz = Class.forName(name);
-//		Field field = clazz.getField("id");//只能拿公有的
-		Field field = clazz.getDeclaredField("id");//获取本类所有属性
+//		Field field = clazz.getField("id");//只能拿公有的属性
+		Field field = clazz.getDeclaredField("id");//获取本类所有属性，包括私有
 		
 		System.out.println(field);
 		//获得属性之前要现获得对象
